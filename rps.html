@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>2 Player Rock Paper Scissors</title>
+  <link rel="stylesheet" href="rps.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Rock Paper Scissors (2 Players)</h1>
+    
+    <div id="round-info">Round 1 of 3</div>
+
+    <div class="section">
+      <h2>Player 1</h2>
+      <div class="choices">
+        <button onclick="selectChoice(1, 'rock')">🪨</button>
+        <button onclick="selectChoice(1, 'paper')">📄</button>
+        <button onclick="selectChoice(1, 'scissors')">✂️</button>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Player 2</h2>
+      <div class="choices">
+        <button onclick="selectChoice(2, 'rock')">🪨</button>
+        <button onclick="selectChoice(2, 'paper')">📄</button>
+        <button onclick="selectChoice(2, 'scissors')">✂️</button>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+      <p>Player 1 Score: <span id="score1">0</span></p>
+      <p>Player 2 Score: <span id="score2">0</span></p>
+    </div>
+
+    <h2 id="result">Waiting for both players...</h2>
+    <button onclick="resetGame()" class="reset-btn">🔁 Restart Game</button>
+  </div>
+
+  <script src="rps.js"></script>
+</body>
+</html>
