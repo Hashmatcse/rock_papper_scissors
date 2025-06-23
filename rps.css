@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #fbc2eb, #a6c1ee); 
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.container {
+  background: #ffffff;
+  padding: 35px 30px;
+  border-radius: 20px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  border: 2px solid #f1f5f9;
+  animation: fadeIn 1s ease;
+}
+
+h1 {
+  font-size: 32px;
+  color: #4c1d95;
+  margin-bottom: 15px;
+}
+
+#round-info {
+  font-size: 18px;
+  font-weight: 600;
+  color: #2563eb; 
+  margin-bottom: 25px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 12px;
+}
+
+.section:nth-child(2) {
+  background-color: #fef9c3;
+}
+
+.section:nth-child(3) {
+  background-color: #d1fae5; 
+}
+
+.section h2 {
+  font-size: 20px;
+  color: #1e293b;
+  margin-bottom: 10px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.choices button {
+  font-size: 30px;
+  padding: 18px;
+  border: none;
+  border-radius: 50%;
+  background: #f3f4f6;
+  color: #1e293b;
+  cursor: pointer;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.choices button:hover {
+  background: #f9a8d4; 
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(236, 72, 153, 0.3);
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+  font-size: 17px;
+  color: #334155;
+}
+
+
+#result {
+  font-size: 20px;
+  color: #10b981; 
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+
+.reset-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 16px;
+  background: linear-gradient(135deg, #6366f1, #ec4899); 
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.reset-btn:hover {
+  background: linear-gradient(135deg, #4f46e5, #db2777);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 500px) {
+  .choices {
+    gap: 10px;
+  }
+
+  .choices button {
+    font-size: 24px;
+    padding: 14px;
+  }
+
+  .scoreboard {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+}
+
+
